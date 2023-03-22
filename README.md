@@ -1,7 +1,7 @@
 # sql_exporter
 modifications to https://github.com/free/sql_exporter
 
-Added the capability to encrypt the dsn. The orginal code exposes the login credentials in the dsn.
+Added the capability to encrypt the dsn. The orginal code exposes the login credentials in the dsn. The encryption function is adapted from https://gist.github.com/humamfauzi/a29ea50edeb175e2e8a9e3456b91fe36
 
 The secrey key can be set using the environment variable SQLEXPORTER_KEY. The challenge is to the user on how to keep the environment of the sql_exporter process secure. 
 
@@ -68,8 +68,4 @@ Once you have the encrypted string, you configure the dsn as below.
 ```
 target:
   data_source_name: 'encrypted://Yoca7r/sjkIUzZSFKGTjNxCjWZIXvanutcC9tti7AqwvAM7PrkkmOl5fZcMcfnGYrwyPLFuudH+AMmN6Z8pQPoBWPGwmEHyQ1Vu8wPMu'
-```  
-
-
-  
-
+```
