@@ -13,7 +13,7 @@ export SQLEXPORTER_KEY=badbadbadbadbadbadbadbadbadbadbadbadbadbadbadbadbadbadbad
 
 Alternatively you can bake the key into the code itself (as commented in the code).
 
-To generate the code, the easiest way is to paste the following into https://go.dev/play/. Make sure you change the key and dsn to your own. In the example below, the dsn is sqlserver://username:password@my.target.host:1433/ and the key is "badbadbadbadbadbadbadbadbadbadbadbadbadbadbadbadbadbadbadbadbada".
+To generate the encrypted dsn, the easiest way is to paste the following into https://go.dev/play/. Make sure you change the key and dsn to your own. In the example below, the dsn is sqlserver://username:password@my.target.host:1433/ and the key is "badbadbadbadbadbadbadbadbadbadbadbadbadbadbadbadbadbadbadbadbada".
 
 ```go
 package main
