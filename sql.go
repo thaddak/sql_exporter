@@ -52,7 +52,7 @@ import (
 func OpenConnection(ctx context.Context, logContext, dsn string, maxConns, maxIdleConns int) (*sql.DB, error) {
 
         //
-        // TKONG 20230320 check if the dsn is encrypted
+        // TK 20230320 check if the dsn is encrypted
         //
         if strings.HasPrefix(dsn, "encrypted://") {
                 // decrypt / encrypt routine from https://gist.github.com/humamfauzi/a29ea50edeb175e2e8a9e3456b91fe36
