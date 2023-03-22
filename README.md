@@ -1,5 +1,5 @@
 # sql_exporter
-modifications to https://github.com/free/sql_exporter
+modifications to https://github.com/free/sql_exporter version 0.5.
 
 Added the capability to encrypt the dsn. The orginal code exposes the login credentials in the dsn. The encryption function is adapted from https://gist.github.com/humamfauzi/a29ea50edeb175e2e8a9e3456b91fe36
 
